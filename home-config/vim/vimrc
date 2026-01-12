@@ -1,0 +1,4 @@
+set mouse=
+set ttymouse=
+
+autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
