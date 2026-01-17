@@ -2,7 +2,9 @@ set $mod Mod1
 font pango:monospace 8
 set $refresh_i3status killall -SIGUSR1 i3status
 floating_modifier $mod
+ hide_edge_borders both
 tiling_drag modifier titlebar
+focus_follows_mouse no
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
