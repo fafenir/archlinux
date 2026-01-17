@@ -1,0 +1,4 @@
+assign [class="firefox"] $ws2
+assign [class="Pcmanfm"] $ws3
+
+for_window [class="org.gnome.FileRoller"] floating enable 
