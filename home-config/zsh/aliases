@@ -1,0 +1,4 @@
+alias s='sudo '
+alias v='vim'
+alias free='free -hmt'
+alias df='df -khT'
