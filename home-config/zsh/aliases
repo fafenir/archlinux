@@ -2,3 +2,14 @@ alias s='sudo '
 alias v='vim'
 alias free='free -hmt'
 alias df='df -khT'
+alias ..='cd ..'
+
+alias   p='sudo pacman --needed -S'
+alias  pu='sudo pacman -Syu'
+alias  pw='sudo pacman -Syuw'
+alias prm='sudo pacman -Rns'
+
+alias tm='tmux new -As work'
+
+alias rcp='rsync -avh --compress-choice=none --compress-level=0 --inplace --append-verify --partial --progress --itemize-changes --stats'
+alias rmv='rsync -avh --compress-choice=none --compress-level=0 --inplace --append-verify --partial --progress --itemize-changes --stats --remove-source-files'
