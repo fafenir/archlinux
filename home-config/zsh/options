@@ -1,0 +1,5 @@
+setopt AUTO_CD
+setopt EXTENDED_GLOB
+setopt GLOB_DOTS
+stty stop undef
+unsetopt FLOW_CONTROL
