@@ -13,3 +13,10 @@ alias tm='tmux new -As work'
 
 alias rcp='rsync -avh --compress-choice=none --compress-level=0 --inplace --append-verify --partial --progress --itemize-changes --stats'
 alias rmv='rsync -avh --compress-choice=none --compress-level=0 --inplace --append-verify --partial --progress --itemize-changes --stats --remove-source-files'
+
+alias -s mkv='mpv'
+alias -s jpg='feh'
+alias -s png='feh'
+
+alias -g CLIP='xclip -selection clipboard'
+alias -g PCLIP='xclip -selection clipboard -o -'
