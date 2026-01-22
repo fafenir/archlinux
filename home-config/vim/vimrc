@@ -1,18 +1,23 @@
+set nocompatible
 set mouse=
 set ttymouse=
 set statusline=%F
 set laststatus=2
 set showcmd
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
-set softtabstop=4
+set softtabstop=2
 set splitbelow splitright
+set hlsearch
+set wildmenu
+
+syntax on
+colorscheme habamax
 
 autocmd InsertEnter * set cursorline
 autocmd InsertLeave * set nocursorline
 autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
 
 cmap w!! w !sudo tee > /dev/null %
-
-colorscheme habamax
+inoremap jk <Esc>
