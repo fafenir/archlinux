@@ -1,1 +1,8 @@
-PS1='%k%f%b%K{100}%B%F{255} %i %k%f%b%F{100}%K{101}%F{101}%B%F{255} %~ %k%f%b%F{101}%k%f%b '
+#vi mode indicator in prompt
+function zle-line-init zle-keymap-select {
+    S1="${${KEYMAP/vicmd/NORMAL}/(main|viins)/INSERT}"
+    PS1="%k%f%b%K{100}%B%F{255} $S1 %k%f%b%F{100}%K{101}%F{101}%B%F{255} %~ %k%f%b%F{101}%k%f%b "
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
