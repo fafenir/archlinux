@@ -11,6 +11,16 @@ set softtabstop=2
 set splitbelow splitright
 set hlsearch
 set wildmenu
+set viminfo=%,<800,'10,/50,:100,h,f0,n~/.config/vim/viminfo
+"           | |    |   |   |    | |  + viminfo file path
+"           | |    |   |   |    | + file marks 0-9,A-Z 0=NOT stored
+"           | |    |   |   |    + disable 'hlsearch' loading viminfo
+"           | |    |   |   + command-line history saved
+"           | |    |   + search history saved
+"           | |    + files marks saved
+"           | + lines saved each register (new name for ", vi6.2)
+"           + save/restore buffer list
+let g:netrw_dirhistmax = 0
 
 syntax on
 colorscheme habamax
